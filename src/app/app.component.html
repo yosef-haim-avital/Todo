@@ -1,12 +1,14 @@
 <div class="app">
   <app-header></app-header>
-
   <main>
     <div class="list-continer">
       <app-todo-list></app-todo-list>
     </div>
-    
+    <div class="todo_cocntainer" >
+      <app-todo></app-todo>
+    </div>
+    <button class="add-new-todo-but" (click)="openDialog()"  mat-fab color="warn" aria-label="Example icon button with a home icon">
+      <mat-icon>add</mat-icon>
+    </button>
   </main>
-
-
 </div>

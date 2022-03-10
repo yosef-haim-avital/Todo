@@ -4,5 +4,8 @@ export interface iToDo{
     iscompleted:boolean;
     isarcaiv:boolean;
     endDate: Date|number|string;
+    selcted:boolean;
+    index:number;
+  
     
 }

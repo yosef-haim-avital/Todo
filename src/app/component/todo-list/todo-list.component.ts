@@ -33,6 +33,18 @@ export class TodoListComponent implements OnInit, OnDestroy {
       this.subscription.unsubscribe()
   }
 
+  public onTodoClick(todo:iToDo,index:number):void{
+     this.TodoService.setSingleTodo(todo);
+     
+     for(let item of this.todos)
+     {
+      item.selcted=false;
+     }
+     this.todos[index].selcted=true;
+  }
+
+  
+
   
 
 
