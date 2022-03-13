@@ -9,19 +9,6 @@ import { NewTodoComponent } from './component/new-todo/new-todo.component';
 })
 export class AppComponent {
   title = 'Todo';
-  constructor(public dialog: MatDialog){}
-
-
- public openDialog(): void {
-    const dialogRef = this.dialog.open(NewTodoComponent, {
-      width: '250px',
-    
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed');
-    
-    });
-  }
+ 
 }
 
